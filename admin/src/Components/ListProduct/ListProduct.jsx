@@ -6,7 +6,7 @@ const ListProduct = () => {
   const [allProducts, setAllProducts] = useState([]);
 
   const fetchInfo = async () => {
-    await fetch("http://localhost:4000/allproducts")
+    await fetch("https://good-jade-python-boot.cyclic.app/allproducts")
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
@@ -18,7 +18,7 @@ const ListProduct = () => {
   }, []);
 
   const remove_product = async (id) => {
-    await fetch("http://localhost:4000/removeproduct", {
+    await fetch("https://good-jade-python-boot.cyclic.app/removeproduct", {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -5,7 +5,7 @@ const NewCollections = () => {
   const [new_collection, setNew_Collcetion] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/newcollections")
+    fetch("https://good-jade-python-boot.cyclic.app/newcollections")
       .then((response) => response.json())
       .then((data) => setNew_Collcetion(data));
   }, []);

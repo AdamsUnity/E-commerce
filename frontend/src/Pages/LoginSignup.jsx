@@ -15,7 +15,7 @@ const LoginSignup = () => {
   const login = async () => {
     console.log("Login Func Executed", formData);
     let responseData;
-    await fetch("http://localhost:4000/login", {
+    await fetch("https://good-jade-python-boot.cyclic.app/login", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -35,7 +35,7 @@ const LoginSignup = () => {
   const Signup = async () => {
     console.log("Signup Func Executed", formData);
     let responseData;
-    await fetch("http://localhost:4000/signup", {
+    await fetch("https://good-jade-python-boot.cyclic.app/signup", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
